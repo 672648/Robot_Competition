@@ -31,6 +31,7 @@ setup(
             'bug2_wall_follow = bug2_navigation.bug2_wall_follow:main',
             'bug2_go_to_point = bug2_navigation.bug2_go_to_point:main',
             'marker_recognition = competition_robot.marker_pose:main',
+            'scoring = scoring.scoring:main',
         ],
     },
 )
