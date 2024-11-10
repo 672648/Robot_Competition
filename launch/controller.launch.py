@@ -18,7 +18,14 @@ def generate_launch_description():
         ),
         launch_ros.actions.Node(
             package='bug2_navigation',
-            executable='bug2_controller',
+            executable='bug2_controller_competition',
+            name='bug2_controller',
+            namespace='tb3_0'
+        ),
+
+        launch_ros.actions.Node(
+            package='bug2_navigation',
+            executable='robot_controller',
             name='bug2_controller',
             namespace='tb3_0'
         ),
@@ -38,7 +45,14 @@ def generate_launch_description():
         ),
         launch_ros.actions.Node(
             package='bug2_navigation',
-            executable='bug2_controller',
+            executable='bug2_controller_competition',
+            name='bug2_controller',
+            namespace='tb3_1'
+        ),
+
+        launch_ros.actions.Node(
+            package='bug2_navigation',
+            executable='robot_controller',
             name='bug2_controller',
             namespace='tb3_1'
         ),
