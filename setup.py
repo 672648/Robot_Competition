@@ -27,10 +27,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bug2_controller = bug2_navigation.bug2_controller:main',
+            'bug2_controller_competition = bug2_navigation.bug2_controller_competition:main',
             'bug2_wall_follow = bug2_navigation.bug2_wall_follow:main',
             'bug2_go_to_point = bug2_navigation.bug2_go_to_point:main',
             'marker_recognition = competition_robot.marker_pose:main',
+            'scoring = scoring.scoring:main',
+            'robot_controller = bug2_navigation.robot_controller:main',
         ],
     },
 )

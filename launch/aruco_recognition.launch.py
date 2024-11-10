@@ -22,6 +22,13 @@ def generate_launch_description():
                     {"camera_info_topic": "camera/camera_info"}]
     )
 
+    scoring_node = Node(
+        package='scoring',  
+        executable='scoring', 
+        name='scoring_node',
+        parameters=[{"namespace": namespace}], 
+    )
+
     marker_trans = Node(
             package='competition_robot',
             executable='marker_recognition',
@@ -33,4 +40,5 @@ def generate_launch_description():
         namespace_launch_arg,
         aruco_node,
         marker_trans,
+        scoring_node,
     ])
